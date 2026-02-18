@@ -13,11 +13,15 @@
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/vue": "^0.3.1",
     "@tailwindcss/postcss": "^4.1.18",
+    "@tailwindcss/vite": "^4.1.18",
+    "@tailwindplus/elements": "^1.0.22",
     "axios": "^1.13.5",
     "leaflet": "^1.9.4",
     "pinia": "^3.0.4",
-    "vue": "^3.5.28"
+    "vue": "^3.5.28",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
     "@tsconfig/node24": "^24.0.4",
