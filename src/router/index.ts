@@ -11,22 +11,22 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('../views/home.vue')
+      component: () => import('../views/Home.vue')
     },
     {
       path: '/about',
       name: 'about',
-      component: () => import('../views/about.vue')
+      component: () => import('../views/About.vue')
     },
     {
       path: '/',
       name: 'recent',
-      component: () => import('../views/recent.vue')
+      component: () => import('../views/Recent.vue')
     },
     {
       path: '/shared',
       name: 'shared',
-      component: () => import('../views/shared.vue')
+      component: () => import('../views/Shared.vue')
     }
   ]
 })

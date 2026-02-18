@@ -2,10 +2,10 @@
     shared...
 </template>
 
-<script setup>
+<script setup lang="ts">
 // Add your script logic here if needed
 </script>
 
-<style scoped>
+<style scoped lang="ts">
 
 </style>

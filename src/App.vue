@@ -3,7 +3,7 @@
 import GoalsList from '@/components/GoalsList.vue';
 import HeaderMenu from '@/components/HeaderMenu.vue';
 import Footer from '@/components/Footer.vue';
-import Home from './views/home.vue';
+import Home from './views/Home.vue';
 
 const listValue = 'My Goals Listttta';
 </script>
