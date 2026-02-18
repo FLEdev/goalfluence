@@ -1,4 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import type { Component } from 'vue/dist/vue.js'
+
+interface IComponents {
+    [key: string]: Component
+}
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

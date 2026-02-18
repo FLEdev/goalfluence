@@ -1,4 +1,5 @@
 {
+  "type": ["shims-vue.d.ts"],
   "files": [],
   "references": [
     {
