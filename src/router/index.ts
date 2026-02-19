@@ -1,3 +1,7 @@
+import About from '@/views/About.vue'
+import Home from '@/views/Home.vue'
+import Shared from '@/views/Shared.vue'
+import Recent from '@/views/Recent.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import type { Component } from 'vue/dist/vue.js'
 
@@ -11,22 +15,22 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('../views/home.vue')
+      component: Home
     },
     {
       path: '/about',
       name: 'about',
-      component: () => import('../views/about.vue')
+      component: About
     },
     {
       path: '/',
       name: 'recent',
-      component: () => import('../views/recent.vue')
+      component: Recent
     },
     {
       path: '/shared',
       name: 'shared',
-      component: () => import('../views/shared.vue')
+      component: Shared
     }
   ]
 })

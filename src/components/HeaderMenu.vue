@@ -36,7 +36,7 @@
     </div>
   </div>
 
-  <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+  <div id="mobile-menu" hidden class="block sm:hidden">
     <div class="space-y-1 px-2 pt-2 pb-3">
       <RouterLink :to="{ name: 'home'}" :class="MobileMenuClass">Home</RouterLink>
       <RouterLink :to="{ name: 'about'}" :class="MobileMenuClass">About</RouterLink>
@@ -45,6 +45,6 @@
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
       <a href="#" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Dashboard</a>
    </div>
-  </el-disclosure>
+  </div>
 </nav>
 </template>

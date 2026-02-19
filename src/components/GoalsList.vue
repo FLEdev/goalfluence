@@ -3,12 +3,12 @@ import { ref, onMounted, watchEffect } from 'vue'
 
 const { listValue } = defineProps(['listValue'])
 
+/*
 const el = ref()
-
 onMounted(() => {
     el.value // <div>
     console.info(listValue) // {default: 'My Goals Listttt'}
-})
+}) */
 
 watchEffect(() => {
   // runs only once before 3.5

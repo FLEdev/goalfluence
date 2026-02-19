@@ -5,58 +5,58 @@ import draggable from "vuedraggable";
 
 const draggableList = ref([
   {
-    "name": "vue.draggable",
-    "order": 1,
-    "fixed": false
+    "name": "Early Breakfast",
+    "location": 'Rome, Italy, at the hotel',
+    "time": '7:20 AM',
+    "icon": 'mdi-food'
   },
   {
-    "name": "draggable",
-    "order": 2,
-    "fixed": false
-  },
+    "name": "Visit the Colosseum",
+    "location": 'Rome, Italy, colonneum',
+    "time": '9:10 AM',
+    "icon": 'mdi-arch'
+  },  
   {
-    "name": "component",
-    "order": 3,
-    "fixed": false
-  },
+    "name": "visit the Vatican",
+    "location": 'Rome, Italy, Vatican',
+    "time": '12:30 AM',
+    "icon": 'mdi-church'
+  }, 
   {
-    "name": "for",
-    "order": 4,
-    "fixed": false
+    "name": "Visit the art museum",
+    "location": 'Rome, Italy, center of Rome',
+    "time": '15:30 AM',
+    "icon": 'mdi-palette'
   },
-  {
-    "name": "vue.js 2.0",
-    "order": 5,
-    "fixed": false
+{
+    "name": "Visit a popular restaurant",
+    "location": 'Rome, Italy, center of Rome',
+    "time": '17:20 AM',
+    "icon": 'mdi-food'
   },
-  {
-    "name": "based",
-    "order": 6,
-    "fixed": false
-  },
-  {
-    "name": "on",
-    "order": 7,
-    "fixed": false
-  },
-  {
-    "name": "Sortablejs",
-    "order": 8,
-    "fixed": false
-  }
 ]);
 </script>
 
 <template>
-  <draggable v-model="draggableList" tag="ul">
-    <template #item="{ element: draggableListItem, index: draggableListIndex }">
-        <DraggableListItem :list-item="draggableListItem" :list-index="draggableListIndex"></DraggableListItem>
-    </template>
-  </draggable>
-
+  <v-expansion-panels
+      variant="accordion"
+      multiple
+      class="w-full"
+  >
+    <draggable v-model="draggableList" tag="ul">
+      <template #item="{ element: draggableListItem, index: draggableListIndex }">
+          <DraggableListItem :list-item="draggableListItem" :list-index="draggableListIndex"></DraggableListItem>
+      </template>
+    </draggable>
+  </v-expansion-panels>
 
 </template>
 
 <style scoped>
 
 </style>
+
+
+
+
+
