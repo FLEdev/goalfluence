@@ -1,4 +1,6 @@
 import './assets/main.css'
+import './assets/fontello/css/fontello.css';
+// import "vuetify/styles";
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
@@ -10,7 +12,6 @@ import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
-import { aliases, fa } from 'vuetify/iconsets/fa4'
 
 const vuetify = createVuetify({
   components,
